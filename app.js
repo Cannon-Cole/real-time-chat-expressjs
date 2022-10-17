@@ -68,6 +68,13 @@ mongoose
         `username ${req.body.username_field} password ${req.body.password_field}`
       );
     });
+
+    app.get("/sign-in", (req, res) => {
+      res.sendFile(__dirname + "/public/html/sign-in.html");
+    });
+    app.get("/handle-sign-in", (req, res) => {
+      res.sendFile(__dirname + "/public/html/sign-in.html");
+    });
     /* app.get("/", (req, res) => {
       res.sendFile(__dirname + "/public/html/index.html");
     }); */
